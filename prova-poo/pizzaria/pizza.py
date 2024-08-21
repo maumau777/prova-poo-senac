@@ -1,5 +1,4 @@
 class Pizza:
-    # Dicionário de preços pré-definidos por tamanho
     precos_base = {
         "Pequena": 30.0,
         "Média": 50.0,
@@ -9,7 +8,7 @@ class Pizza:
     def __init__(self, nome, tamanho):
         self.nome = nome
         self.tamanho = tamanho
-        self.preco = self.precos_base.get(tamanho, 0.0)  # Obtém o preço base a partir do tamanho da pizza
+        self.preco = self.precos_base.get(tamanho, 0.0)
 
     def calcular_preco(self):
         return self.preco
